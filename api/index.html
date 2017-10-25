@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="/semantic.min.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="/style.css"/>
+        <title>Guestbook API</title>
+    </head>
+    <body>
+        <div id="api-container">
+            <div class="headers">
+                <h1 class="ui header">API Documentation</h1>
+            </div>
+            
+            <div id="api-docs">
+                <table class="ui very basic celled table">
+                    <thead><tr>
+                        <th class="two wide">Path</th>
+                        <th class="one wide">HTTP Type</th>
+                        <th class="four wide">Description</th>
+                        <th class="two wide">Request Body</th>
+                        <th class="two wide">Querystring</th>
+                        <th class="three wide">Example</th>
+                    </tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>/api/guestbook</td>
+                            <td>GET</td>
+                            <td>Gets all entries in the guestbook</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>/api/guestbook</td>
+                        </tr>
+                        <tr>
+                            <td>/api/guestbook</td>
+                            <td>GET</td>
+                            <td>Gets a specific entry in the guestbook</td>
+                            <td>N/A</td>
+                            <td>id=<em>[entry ID]</em></td>
+                            <td>/api/guestbook?id=1</td>
+                        </tr>
+                        <tr>
+                            <td>/api/last-request</td>
+                            <td>GET</td>
+                            <td>Gets the last request sent to the server</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>/api/last-request</td>
+                        </tr>
+                        <tr>
+                            <td>/api/guestbook/new</td>
+                            <td>POST</td>
+                            <td>Submits a new entry to the server</td>
+                            <td>name, message</td>
+                            <td>N/A</td>
+                            <td>/api/guestbook/new<br/>(requires code to attach a body)</td>
+                        </tr>
+                        <tr>
+                            <td>/api/delete/:id</td>
+                            <td>DELETE</td>
+                            <td>Deletes a specific entry from the server</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>/api/guestbook/0</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        
+        <script type="text/javascript" src="/semantic.min.js"></script>
+    </body>
+</html>

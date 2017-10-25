@@ -1,0 +1,23 @@
+#main-container {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+#api-container {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.headers {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#last-req {
+    margin: 50px 0;
+}
+
+#api-link {
+    text-align: center;
+    margin: 20px 0;
+}

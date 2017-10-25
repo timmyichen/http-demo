@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="/semantic.min.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="/style.css"/>
+        <title>The best guestbook ever</title>
+    </head>
+    <body>
+        <div id="main-container">
+            <div class="headers">
+                <h1 class="ui header">Best Guestbook Ever</h1>
+                <h2 class="ui header">Welcome to the Best Guestbook Ever!</h2>
+            </div>
+            
+            <div class="add-name">
+                <h3 class="ui header">Add your name to the guestbook</h3>
+                <div class="ui form">
+                    <div class="inline fields">
+                        <div class="four wide field">
+                            <label>Name:</label>
+                            <input id="name" type="text" name="name" placeholder="Name" />
+                        </div>
+                        <div class="ten wide field">
+                            <label>Message:</label>
+                            <input id="message" type="text" name="message" placeholder="Message" />
+                        </div>
+                        <div class="two wide field">
+                            <button class="ui primary button" id="add-name">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ui divider"></div>
+            
+            <div id="api-link">
+                <a href="/api/" class="ui button primary">Click here to access the API Documentation</a>
+                <button class="ui button negative" onClick="deleteAll();">Delete All Entries</button>
+            </div>
+            
+            <div class="ui divider"></div>
+            
+            <div id="guestbook">
+                <h3 class="ui header">See who's been here already!</h3>
+                <table class="ui very basic celled table">
+                    <thead><tr>
+                        <th class="two wide">ID</th>
+                        <th class="four wide">Name</th>
+                        <th class="eight wide">Message</th>
+                        <th class="two wide">Delete</th>
+                    </tr></thead>
+                    <tbody id="guestbook-body"></tbody>
+                </table>
+            </div>
+            
+            <div class="ui divider"></div>
+            
+            <div id="last-req">
+                <h3 class="ui header">The last request sent to the server:</h3>
+                <div id="req-contents"></div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/semantic.min.js"></script>
+        <script type="text/javascript" src="/script.js"></script>
+    </body>
+</html>
