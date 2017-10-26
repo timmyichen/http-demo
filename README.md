@@ -8,7 +8,7 @@ Created with Node/Express, using semantic-ui for CSS.  Data is stored in server 
 
 Begin by creating a clone of this repo:
 ```
-https://github.com/timmyichen/http-demo/
+git clone https://github.com/timmyichen/http-demo/
 ```
 
 Once finished, navigate into the cloned directory:
